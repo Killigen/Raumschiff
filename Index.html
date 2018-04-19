@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Space Game</title>
+	<link href="style.css" type="text/css" rel="stylesheet">
+	
+</head>
+
+<body>
+	<script type="text/javascript" src="script.js"></script>
+			
+				<header>
+					
+						<h1>Space Game</h1>
+					
+				</header>
+				
+				<nav>
+				
+
+				
+				
+				
+				
+				 <!-- <h3>W&auml;hle dein Schiff</h3> -->
+				 <div id="s">
+				 	<div id="meinSchiff">
+						<p id="mySchiffName"></p>	 
+					</div>
+				 <div id="auswahl">  
+
+					<div class="schiff">
+						<img src="Schiffe/A-Wing.png">
+						<br/>
+						<button	onclick="setSchiff(1)"id="A-Wing">A-Wing</button>
+					</div>
+					
+					<div class="schiff">
+						<img src="Schiffe/X-Wing.png">
+						<br/>
+						<button	onclick="setSchiff(2)"id="X-Wing">X-Wing</button>
+					</div>
+					
+					<div class="schiff">
+						<img src="Schiffe/Y-Wing.png">
+						<br/>
+						<button	onclick="setSchiff(3)" id="Y-Wing">Y-Wing</button>
+					</div>
+					
+					<div class="schiff">
+						<img src="Schiffe/Tie-Interceptor.png">
+						<br/>
+						<button	onclick="setSchiff(4)"id="Tie-Interceptor">Tie-Interceptor</button>
+					</div>
+					
+					<div class="schiff">
+						<img src="Schiffe/Tie-Advanced.png">
+						<br/>
+						<button	onclick="setSchiff(5)" id="Tie-Advanced">Tie-Advanced</button>
+					</div>
+					
+					<div class="schiff">
+						<img src="Schiffe/Tie-Bomber.png">
+						<br/>
+						<button	onclick="setSchiff(6)" id="Tie-Bomber">Tie-Bomber</button>
+					</div>
+				 </div>
+				 </div>
+				 
+				 
+				 <div id="eingabe">
+				 <button	onclick="start()" id="Start-Button">Start</button>
+				 <table>
+					<tr>
+						<td colspan="3">
+						<center>
+							<button onclick="bewegen(0)">Up</button>
+						</center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button onclick="bewegen(1)">left</button>
+						</td>
+						<td>
+							<button onclick="bewegen(2)">down</button>
+						</td>
+						<td>
+							<button onclick="bewegen(3)">right</button>
+						</td>
+					</tr>
+				 
+				 </table>
+				</div>	
+					
+					
+				</nav>
+				
+				<section>	
+						
+					<div id="box"> <img id="mySchiffPic" src=""></div>					
+				</section>
+				
+				<footer>
+				</footer>
+				
+
+</body>
+
+</html> 
