@@ -102,6 +102,7 @@ console.log(pos);
 
 
 function bewegen(r){//0=up 1=left  2=down  3=right
+    clearInterval(t);
 	switch (r) {
     
 	case 0:
