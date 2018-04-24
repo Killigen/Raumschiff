@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="http://allfont.de/allfont.css?fonts=desdemona" rel="stylesheet" type="text/css" />
 <meta charset="UTF-8">
 	<title>Space Game</title>
 	<link href="style.css" type="text/css" rel="stylesheet">
@@ -18,17 +19,35 @@
 				
 				<nav>
 				
-
-				
-				
-				
-				
-				 <!-- <h3>W&auml;hle dein Schiff</h3> -->
-				 <div id="s">
-				 	<div id="meinSchiff">
-						<p id="mySchiffName"></p>	 
+				<div id="mySchiffNameBox2" display: none>
+					<p id="mySchiffName2"></p>	  
+					<div id="progressBarHolder2">
+						<div id="progressBar2">
+							<div id="progressInformation2">0 %</div>
+						</div>
 					</div>
+				</div>
+				
+				
+				<div id="mySchiffNameBox1">
+					<p id="mySchiffName1"></p>
+					<div id="progressBarHolder1">
+						<div id="progressBar1">
+							<div id="progressInformation1">0 %</div>
+							</div>
+						</div>
+					</div>						
+				</div>
+				
+	<div id="laser1"></div>				
+
+				 <!--  -->
+				 <div id="s">
+				 	
+					
+					
 				 <div id="auswahl">  
+				 <h3>W&auml;hlt euer Schiffe. Zuerst P1 dann P2</h3>
 
 					<div class="schiff">
 						<img src="Schiffe/A-Wing.png">
@@ -68,38 +87,39 @@
 				 </div>
 				 </div>
 				 
-				 
+				<!-- 
 				 <div id="eingabe">
-				<!--  <button	onclick="start()" id="Start-Button">Start</button> -->
+				  
 				 <table>
 					<tr>
 						<td colspan="3">
 						<center>
-							<button onclick="bewegen(0)">Up</button>
+							<button onclick="bewegen1(0)">Up</button>
 						</center>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<button onclick="bewegen(1)">left</button>
+							<button onclick="bewegen1(1)">left</button>
 						</td>
 						<td>
-							<button onclick="bewegen(2)">down</button>
+							<button onclick="bewegen1(2)">down</button>
 						</td>
 						<td>
-							<button onclick="bewegen(3)">right</button>
+							<button onclick="bewegen1(3)">right</button>
 						</td>
 					</tr>
 				 
 				 </table>
 				</div>	
-					
+					-->
 					
 				</nav>
 				
 				<section>	
 						
-					<div id="box"> <img id="mySchiffPic" src=""></div>					
+					<div id="box1"> <img id="mySchiffPic1" src=""></div>					
+					<div id="box2"> <img id="mySchiffPic2" src=""></div>					
 				</section>
 				
 				<footer>
